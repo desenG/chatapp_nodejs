@@ -1,0 +1,19 @@
+{
+  "name": "MAD9023-socket-io-chat-example",
+  "version": "0.0.1",
+  "author": "lenczes@algonquincollege.com",
+  "description": "A very basic example of a web-based socket.io chat application written in javascript, showing realtime communication with a node.js server",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    
+	"express": "4.10.4",
+    
+	"socket.io": "latest",
+	
+	"beepbeep": "1.2.0"
+	
+  }
+}

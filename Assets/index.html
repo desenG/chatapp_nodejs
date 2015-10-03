@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MAD9023-Socket.IO chat</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="socket.io-1.2.0.js"></script>
+        <script src="script.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,user-scalable=no" />    
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <section data-role="page">
+                <div id="msgDiv">
+                    <ul id="messages">
+
+                    </ul>
+                </div>
+
+                <div id="guiDiv">
+                    <img src="AC.png"  />
+
+                    <!-- In the form's onSubmit code we must return false to nullify the forms onSubmit code -->
+                    <form id="inputForm" action="" name="inputForm" onSubmit="return false;">
+                        <p>Name:</p><input id="name" autocomplete="off" disabled="disabled" />
+                        <p>Msg:</p><input id="msg" autocomplete="off" />
+                        <!-- On the buttons onClick function we call our custom function to send our message data -->
+                        <input type="button" id="btnSendMessage" value="send Message" class="btn"/>
+                    </form>
+                </div>
+            </section>
+
+            <div data-role="overlay">&nbsp;</div>
+
+            <div data-role="modal">
+                <h3>Login</h3>
+                <form>
+                    <div class="formBox">
+                        <input type="text" id="txtName" name="txtName" class="lg" placeholder="Enter your name" value="helen"/>
+                    </div>
+                    <div class="formBox">
+                        <input type="button" id="btnLogin" value="Login" class="btn"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
